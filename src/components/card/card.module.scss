@@ -1,0 +1,41 @@
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.opts {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  .icons {
+    margin: 0;
+
+    span {
+      margin-left: 0.5rem;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}
+
+.comment {
+  margin-bottom: 0 !important;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+
+  span {
+    font-size: 14px;
+    margin-top: .3rem;
+    margin-left: 1rem;
+  }
+
+  .quoteMark {
+    background: #D9D9D9;
+    border-radius: 1.5px 0px 0px 1.5px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 3px;
+    height: 26px;
+  }
+}

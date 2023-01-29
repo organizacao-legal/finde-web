@@ -1,0 +1,49 @@
+$primary-color: #000000;
+$secondary-color: #767373;
+$tertiary-color: #3F3CE1;
+
+.Feed div {
+  margin-bottom: 2rem;
+}
+
+.heading {
+  p {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.body {
+  input {
+    width: 100%;
+    height: 4rem;
+    border-radius: 8px;
+    border: 0.2px solid $primary-color;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.btnGroup {
+  // border-bottom: 1px solid $primary-color;
+
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    width: 4rem;
+    padding: .3rem;
+    margin-right: 1rem;
+  }
+}
