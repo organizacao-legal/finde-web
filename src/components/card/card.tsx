@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { cards } from '@/consts/card.const';
 import s from './card.module.scss';
 
 // icons
@@ -10,48 +11,6 @@ import hourGlass from '../../icons/hour-glass.svg';
 
 export default function Card() {
   const icons = { impressions, comment, share, hourGlass };
-  const cards = [ 
-  {
-    post: "Metro Boomin melhor artista vivo",
-    impressions: "10k",
-    time: "2m ago",
-    comment: [
-      "comentario 1",
-      "comentario 2",
-      "comentario 3",
-    ]
-  },
-  {
-    post: "The Weeknd melhor artista vivo",
-    impressions: "8k",
-    time: "2m ago",
-    comment: [
-      "comentario 1",
-      "comentario 2",
-      "comentario 3",
-    ]
-  },
-  {
-    post: "21 Savage melhor artista vivo",
-    impressions: "6k",
-    time: "2m ago",
-    comment: [
-      "comentario 1",
-      "comentario 2",
-      "comentario 3",
-    ]
-  },
-  {
-    post: "Travis Scott melhor artista vivo",
-    impressions: "4k",
-    time: "2m ago",
-    comment: [
-      "comentario 1",
-      "comentario 2",
-      "comentario 3",
-    ]
-  },
-];
 
     return (
       <>
