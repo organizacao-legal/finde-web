@@ -1,11 +1,25 @@
-import React, {  } from 'react';
+import React, { useState } from 'react';
 import Card from '../card/card';
 import s from './feed.module.scss';
 
 export default function Feed() {
+  const [post, setPost] = useState();
+  const [selected, setSelected] = useState();
+  const [selectedStyle, setSelectedStyle] = useState({
+    'backgroundColor': 'red',
+    'color': 'green'
+  });
+  const [nonSelected, setNonSelected] = useState({
+    'backgroundColor': 'yellow',
+    'color': 'blue'
+  })
 
   const selectedButton = ({ target }: React.MouseEvent<HTMLButtonElement>) => {
     console.log('// TO DO: Highlight button', target);
+  };
+
+  const handleInputChange = ({ target }: React.ChangeEvent<HTMLTextAreaElement>) => {
+    return setPost(target.value);
   };
 
   function submit(e: React.MouseEvent<HTMLButtonElement>) {
@@ -21,9 +35,17 @@ export default function Feed() {
         </div>
 
         <div className={s.body}>
-          <input type="text" name="post" id="post" />
+          <textarea
+            name="post"
+            id="post"
+            cols={30}
+            rows={10}
+            value={post}
+            onChange={(event) => handleInputChange(event)}
+          ></textarea>
           <span>Your note will be automatically deleted after 24 hours.</span>
           <button type="submit" onClick={(event) => submit(event)}>Add post</button>
+          <p>post: {post}</p>
         </div>
 
         <div className={s.btnGroup}>

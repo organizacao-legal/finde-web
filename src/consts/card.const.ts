@@ -1,7 +1,9 @@
-export const cards = [ 
+import { Post } from "@/types/types";
+
+export const cards: Array<Post> = [ 
   {
     post: "Metro Boomin melhor artista vivo",
-    impressions: "10k",
+    impressions: 10,
     time: "2m ago",
     comment: [
       "comentario 1",
@@ -11,7 +13,7 @@ export const cards = [
   },
   {
     post: "The Weeknd melhor artista vivo",
-    impressions: "8k",
+    impressions: 8,
     time: "2m ago",
     comment: [
       "comentario 1",
@@ -21,7 +23,7 @@ export const cards = [
   },
   {
     post: "21 Savage melhor artista vivo",
-    impressions: "6k",
+    impressions: 6,
     time: "2m ago",
     comment: [
       "comentario 1",
@@ -31,7 +33,7 @@ export const cards = [
   },
   {
     post: "Travis Scott melhor artista vivo",
-    impressions: "4k",
+    impressions: 4,
     time: "2m ago",
     comment: [
       "comentario 1",

@@ -15,14 +15,14 @@ export default function Card() {
     return (
       <>
         <div>
-          { cards.map((item) => 
-            <div key={item.post}>
+          { cards.map((item, index) => 
+            <div key={index}>
               <span className={s.title}>{item.post}</span>
 
               <div className={s.opts}>
                 <div className={s.icons}>
                   <Image src={icons.impressions} alt="Impressions" className={s.img} />
-                  <span>{item.impressions}</span>
+                  <span>{item.impressions}k</span>
                 </div>
 
               <div className={s.icons}>
@@ -42,8 +42,8 @@ export default function Card() {
               </div>
 
                 {
-                  item.comment.map((item) => 
-                    <div className={s.comment} key={item}>
+                  item.comment.map((item, index) => 
+                    <div className={s.comment} key={index}>
                       <div className={s.quoteMark}></div>
                       <span>{item}</span>
                     </div>
